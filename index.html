@@ -7,7 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
+   
+    <div class="game-container">
     <div class="wrapper">
+     <div class="game-header">
+
+    <div class="player-info">
+        <input type="text" id="playerName" placeholder="Digite seu nome">
+        <button id="startButton">Começar jogo</button>
+    </div>
+
+    <div class="timer">
+        <span>Tempo:</span>
+        <span id="timer">00:00</span>
+    </div>
+</div>
+
       <ul class="cards">
         <li class="card">
           <div class="view front-view">
@@ -139,7 +154,12 @@
         </li>
       </ul>
     </div>
-
+  <aside class="ranking">
+<h2> 🏆 Ranking </h2>
+<ol id="rankingList">
+  <li></li>Nenhum Jogador Ainda
+</ol>
+</aside>
     <script src="assets/js/script.js"></script>
 
   </body>

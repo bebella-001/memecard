@@ -74,7 +74,7 @@ body{
   width: 19px;
 }
 .card .back-view img{
-  max-width: 45px;
+  max-width: 85px;
 }
 .card .back-view{
   transform: rotateY(-180deg);
@@ -95,7 +95,7 @@ body{
     width: 17px;
   }
   .card .back-view img{
-    max-width: 40px;
+    max-width: 70px;
   }
 }
 
@@ -108,6 +108,83 @@ body{
     width: 15px;
   }
   .card .back-view img{
-    max-width: 35px;
+    max-width: 60px;
   }
+}
+/* ORGANIZAÇÃO DO JOGO E RANKING */
+.game-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* ESTILO DO RANKING */
+.ranking {
+    background: #F8F8F8;
+    padding: 25px;
+    border-radius: 10px;
+    width: 230px;
+    min-height: 250px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.ranking h2 {
+    color: #6563FF;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ranking ol {
+    padding-left: 25px;
+}
+
+.ranking li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* CAMPO DO JOGADOR */
+.player-info {
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.player-info input {
+    padding: 8px;
+    border: 2px solid #6563FF;
+    border-radius: 5px;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    width: 170px;
+}
+
+.player-info button {
+    background: #6563FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.player-info button:hover {
+    background: #4846d8;
+}
+
+/* CRONÔMETRO */
+.timer {
+    font-size: 18px;
+    font-weight: 600;
+    color: #6563FF;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.game-header{
+  width: 100%;
+  text-align: center;
 }
